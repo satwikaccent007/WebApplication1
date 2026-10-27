@@ -1,0 +1,54 @@
+﻿@model WebApplication1.Models.OrderModel
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+
+            <div class="card shadow-lg border-0 rounded-4">
+                <div class="card-header bg-primary text-white text-center">
+                    <h3>Order Form</h3>
+                </div>
+                <a class="btn btn-secondary" asp-controller="Order" asp-action="GetOrder">
+                    Back
+                </a>
+                <div class="card-body p-4">
+
+                    <form method="post"
+                          asp-controller="Order"
+                          asp-action="SubmitOrder">
+
+                        <div class="mb-3">
+                            <label asp-for="Name" class="form-label">
+                                Product Name
+                            </label>
+                            <input asp-for="Name"
+                                   class="form-control"
+                                   placeholder="Enter product name" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Price" class="form-label">
+                                Product Price
+                            </label>
+                            <input asp-for="Price"
+                                   type="number"
+                                   class="form-control"
+                                   placeholder="Enter price" />
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit"
+                                    class="btn btn-success btn-lg">
+                                Submit Order
+                            </button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

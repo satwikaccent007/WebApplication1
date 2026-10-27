@@ -1,0 +1,64 @@
+﻿<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+
+    <div class="container">
+
+        <a class="navbar-brand"
+           asp-controller="UsersOps"
+           asp-action="Index">
+            User Management
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#userNavbar"
+                aria-controls="userNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="userNavbar">
+
+            <div class="navbar-nav ms-auto align-items-center">
+
+                <a class="nav-link"
+                   asp-controller="UsersOps"
+                   asp-action="Index">
+                    Users
+                </a>
+
+                <a class="nav-link"
+                   asp-controller="UsersOps"
+                   asp-action="Create">
+                    Add User
+                </a>
+
+                <a class="nav-link"
+                   asp-controller="UsersOps"
+                   asp-action="Login">
+                    Login
+                </a>
+
+                <!-- Logout -->
+                <form asp-controller="User"
+                      asp-action="Logout"
+                      method="post"
+                      class="d-inline">
+
+                    <button type="submit"
+                            class="btn btn-danger logout-btn">
+                        Logout
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>

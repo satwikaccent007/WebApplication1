@@ -1,0 +1,54 @@
+﻿@model WebApplication3.Models.UserDTO;
+
+<div class="container mt-4">
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+            <h3>Create User</h3>
+        </div>
+
+        <div class="card-body">
+            <form asp-action="Update" method="post" asp-controller="User">
+                <div>
+                    <input type="hidden" asp-for="ID"/>
+                <div/>
+                <div class="mb-3">
+                    <label asp-for="Name"></label>
+                    <input asp-for="Name" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Email"></label>
+                    <input asp-for="Email" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Password"></label>
+                    <input asp-for="Password" class="form-control" />
+                </div>
+                    <div class="mb-3">
+                        <label asp-for="ConfirmPassword"></label>
+                        <input asp-for="ConfirmPassword" class=" form-control" />
+                    </div>
+
+                <div class="mb-3">
+                    <label asp-for="Dob"></label>
+                    <input asp-for="Dob" type="date" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Age"></label>
+                    <input asp-for="Age" type="number" class="form-control" />
+                </div>
+
+                <button type="submit" class="btn btn-success">
+                    Update User
+                </button>
+
+                <a asp-action="Index" class="btn btn-secondary">
+                    Back
+                </a>
+
+            </form>
+        </div>
+    </div>
+</div>

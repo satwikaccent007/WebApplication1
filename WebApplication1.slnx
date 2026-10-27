@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="DataAccessLayer/DataAccessLayer.csproj" Id="2b2b9542-90a1-4926-8ce6-6dc1171cbddb" />
+  <Project Path="DataLayer/DataLayer.csproj" Id="c2acd706-d804-4b46-bacb-97b52d3069e4" />
+  <Project Path="WebApi/WebApi.csproj" Id="a3152c2e-09b9-4b06-a879-ee5c3f4d58c1" />
+  <Project Path="WebApplication1/WebApplication1.csproj" />
+  <Project Path="WebApplication2/WebApplication2.csproj" Id="b601cebd-dc0e-4b87-9e9f-a8a1be383586" />
+  <Project Path="WebApplication3/WebApplication3.csproj" Id="2b0842f8-3cae-497b-8fe7-7e4faba8506f" />
+</Solution>

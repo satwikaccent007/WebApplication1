@@ -1,0 +1,11 @@
+﻿@model List<DataLayer.Models.Student>;
+
+
+@foreach(var student in Model)
+{
+    <p>
+        <h2>@student.StudentId</h2>
+        <h2>@student.StudentName</h2>
+        <h2>@student.Dept.DeptName</h2>
+    </p>   
+}
